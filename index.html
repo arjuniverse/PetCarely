@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PetCarely 🐾</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🐾 PetCarely</h1>
+    <p>Your pet’s daily care companion</p>
+  </header>
+
+  <main>
+    <!-- Pet Profile -->
+    <section class="card">
+      <h2>Pet Profile</h2>
+      <input id="petName" placeholder="Pet Name" />
+      <input id="petType" placeholder="Pet Type (Dog/Cat)" />
+      <button onclick="savePet()">Save</button>
+      <p id="petDisplay"></p>
+    </section>
+
+    <!-- Daily Care -->
+    <section class="card">
+      <h2>Daily Care Checklist</h2>
+      <label><input type="checkbox" id="feed"> Feed</label>
+      <label><input type="checkbox" id="walk"> Walk</label>
+      <label><input type="checkbox" id="groom"> Groom</label>
+      <button onclick="saveChecklist()">Save</button>
+    </section>
+
+    <!-- Vaccination -->
+    <section class="card">
+      <h2>Vaccination Notes</h2>
+      <textarea id="vaccineNote" placeholder="Enter vaccination info..."></textarea>
+      <button onclick="saveVaccine()">Save</button>
+      <p id="vaccineDisplay"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
